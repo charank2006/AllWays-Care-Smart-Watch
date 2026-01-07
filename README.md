@@ -1,20 +1,41 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# AllWays-Care-Smart-Watch
 
-# Run and deploy your AI Studio app
+**AllWays-Care** is an automated background-running health and safety system designed for elderly users living alone. By monitoring real-time health signals and motion data, the system removes the burden of manual operation—there is no button to press and no app to open. The system *acts automatically* when danger is detected.
 
-This contains everything you need to run your app locally.
+##  Key Features
 
-View your app in AI Studio: https://ai.studio/apps/drive/1jV8DkYplWa5gZWDUaAJG1I9qKtMVdE9W
+* **Continuous Background Monitoring:** Captures heart rate (HR), sleep quality, and activity levels without user intervention.
+* **Automatic Anomaly Detection:** Identifies falls, sudden inactivity, or irregular heart rates using real-time sensor data.
+* **Zero-Interaction Alerts:** If danger is detected, the system instantly alerts caregivers and emergency contacts.
+* **Live Location Sharing:** Emergency alerts include real-time GPS coordinates for immediate response.
+* **Automatic Sync:** Data captures on the smartwatch are instantly synced to the smartphone system for processing and alerting.
 
-## Run Locally
+---
 
-**Prerequisites:**  Node.js
+##  How It Works
+
+1.  **Passive Sensing:** The watch captures real-time signals (HR, activity, fall-risk indicators) in the background.
+2.  **Edge Analysis:** The system analyzes the data for anomalies like sudden impacts followed by inactivity.
+3.  **Instant Notification:** Upon detection of a potential emergency, a high-priority alert is sent to pre-configured emergency contacts with the user's live location.
 
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+
+---
+
+##  Installation & Setup
+
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/charank2006/AllWays-Care-Smart-Watch.git](https://github.com/charank2006/AllWays-Care-Smart-Watch.git)
+    ```
+2.  **Install dependencies:**
+    ```bash
+    pip install -r requirements.txt
+    ```
+3.  **Configuration:**
+    Update the `emergency_contacts.json` with the phone numbers and names of the caregivers.
+
+---
+
+
+© 2026 AllWays-Care Team
